@@ -1,0 +1,15 @@
+I=imread('C:\Users\USER\Desktop\pic\im.jpeg');
+I=rgb2gray(I);
+J=filter2(fspecial('average',3),K)/255;
+i=edge(I,'sobel');
+j=edge(I,'canny');
+k=edge(I,'roberts');
+subplot(1,3,1);
+imshow(i);
+title('Sobel');
+subplot(1,3,2);
+imshow(j);
+title('Canny');
+subplot(1,3,3);
+imshow(k);
+title('Roberts');

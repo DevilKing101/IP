@@ -1,0 +1,12 @@
+t=1:0.01:5;
+subplot(1,3,1);
+a=sin(t); plot(t,a);
+xlabel('x axis'); ylabel('y axis');
+title('Sine');
+subplot(1,3,2);
+a=cos(t); plot(t,a);
+xlabel('x axis'); ylabel('y axis');
+title('Cosine');
+subplot(1,3,3);
+k=magic(4); plot(k);
+title('Magic 4');

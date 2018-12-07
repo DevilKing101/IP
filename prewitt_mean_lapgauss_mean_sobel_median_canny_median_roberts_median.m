@@ -1,0 +1,17 @@
+I=imread('C:\Users\USER\Desktop\pic\im.jpeg');
+I=rgb2gray(I);
+J=medfilt2(I);
+i=edge(I,'prewitt');
+m=edge(I,'log');
+n=edge(I,'sobel');
+j=edge(I,'canny');
+k=edge(I,'roberts');
+subplot(2,3,1);
+imshow(I);
+title('Original');
+subplot(2,3,2);
+imshow(i);
+title('Prewitt');
+subplot(2,3,3);
+imshow(m);
+title('Laplacian');

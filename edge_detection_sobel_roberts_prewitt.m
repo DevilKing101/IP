@@ -1,0 +1,14 @@
+I=imread('C:\Users\USER\Desktop\pic\im.jpeg');
+I=rgb2gray(I);
+subplot(1,3,1);
+J=edge(I,'sobel');
+imshow(J);
+title('Sobel');
+subplot(1,3,2);
+J=edge(I,'prewitt')
+imshow(J);
+title('Prewitt');
+subplot(1,3,3);
+J=edge(I,'roberts');
+imshow(J);
+title('Roberts');

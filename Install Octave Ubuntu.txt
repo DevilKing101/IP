@@ -1,0 +1,16 @@
+You have two options:
+
+Use the octave ppa, which already has the 4.0 version. You can install octave like this:
+
+sudo add-apt-repository ppa:octave/stable
+sudo apt-get update
+sudo apt-get install octave
+Download and compile the sources yourself:
+
+sudo apt-get build-dep octave
+wget ftp://ftp.gnu.org/gnu/octave/octave-4.0.0.tar.gz
+tar xf octave-4.0.0.tar.gz
+cd octave-4.0.0/
+./configure
+make 
+sudo make install

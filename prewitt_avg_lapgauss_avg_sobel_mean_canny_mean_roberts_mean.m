@@ -1,0 +1,16 @@
+I=imread('C:\Users\USER\Desktop\pic\im.jpeg');
+I=rgb2gray(I);
+J=filter2(fspecial('average',3),K)/255;
+i=edge(I,'prewitt');m=edge(I,'log');n=edge(I,'sobel');j=edge(I,'canny');k=edge(I,'roberts');
+subplot(2,3,1);imshow(I);
+title('Original');
+subplot(2,3,2);imshow(i);
+title('Prewitt');
+subplot(2,3,3);imshow(m);
+title('Laplacian');
+subplot(2,3,4);imshow(n);
+title('Sobel');
+subplot(2,3,5);imshow(j);
+title('Canny');
+subplot(2,3,6);imshow(n);
+title('Roberts');
